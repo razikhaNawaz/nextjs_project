@@ -1,24 +1,24 @@
 import MeetupList from "@/components/meetups/MeetupList";
 
-const dummy_meetups = [
+const DUMMY_MEETUPS = [
   {
-    id: "m1",
-    title: "a first meet up",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg",
-    address: " a some address, 49A",
-    description: "This is the first meetup",
+    id: 'm1',
+    title: 'A First Meetup',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg',
+    address: 'Some address 5, 12345 Some City',
+    description: 'This is a first meetup!'
   },
   {
-    id: "m2",
-    title: "a second meet up",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg",
-    address: " a some address, 84A",
-    description: "This is the second meetup",
+    id: 'm2',
+    title: 'A Second Meetup',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg',
+    address: 'Some address 10, 12345 Some City',
+    description: 'This is a second meetup!'
   }
 ];
-const HomePage = () => {
-  return <MeetupList meetups={dummy_meetups} />;
-};
+
+function HomePage() {
+  return <MeetupList meetups={DUMMY_MEETUPS} />
+}
+
 export default HomePage;
