@@ -5,7 +5,7 @@ async function handler(req, res) {
   if (req.method === "POST") {
     const data = req.body;
     const client = await MongoClient.connect(
-      "mongodb+srv://razikha02:hX58bJWFtgqUbZbe@cluster0.vmsb1ax.mongodb.net/meetups?retryWrites=true&w=majority"
+      "mongodb+srv://razikha02:hCw7UaLlsYZNG2dc@cluster0.wvoc4st.mongodb.net/meetups?retryWrites=true&w=majority"
     );
 
     const db = client.db();
@@ -19,6 +19,7 @@ async function handler(req, res) {
     client.close();
 
     res.status(201).json({ message: "meetup inserted!" });
+    
   }
 }
 export default handler;
